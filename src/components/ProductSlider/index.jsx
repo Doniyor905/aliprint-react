@@ -65,7 +65,11 @@ const ProductSlider = ({ className, dataProduct }) => {
               </div>
               <div className={classes['productSlider__item-img']}>
                 <img src={data.image} alt="" />
-                <button className={classes['productSlider__item-img-btn']}>Buyurtma berish</button>
+                <button
+                  onClick={() => setModal(true)}
+                  className={classes['productSlider__item-img-btn']}>
+                  Buyurtma berish
+                </button>
               </div>
             </div>
           </SwiperSlide>
