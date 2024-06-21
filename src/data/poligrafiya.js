@@ -10,42 +10,42 @@ import kundalikImg from '../images/poligrafiya/kundalik.png';
 const poligrafiya = [
   {
     title: 'Flayer',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus feugiat pharetra massa risus tortor leo. Non viverra tempus metus risus egestas egestas. Elementum eros, sit sapien ullamcorper ullamcorper et eget at. A netus ultrices lectus vitae.',
+    text: 'Reklama flayerlari mahsulot yoki xizmatlaringiz ommalashishida qat’iy tarzda mijozlar e’tiborini jalb etish va buning uchun ko‘p xarajat talab etilmasligi bilan ahamiyatlidir. Flayerlar e’lon qilinayotgan mahsulot yoki xizmatlar to‘g‘risida batafsil ma’lumot berishi bilan ham o‘ziga xos xarakterga ega. Bu esa biznesingiz rivojida mijozlar ko‘lamini kengaytirish, mahsulot yoki xizmatlar savdo ko‘lamini oshirish hamda yuqori daromad olishda muhim ahamiyat kasb etadi.',
     image: falyerImg,
   },
   {
     title: 'Buklet',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus feugiat pharetra massa risus tortor leo. Non viverra tempus metus risus egestas egestas. Elementum eros, sit sapien ullamcorper ullamcorper et eget at. A netus ultrices lectus vitae.',
+    text: 'Bukletlar reklama qilinayotgan mahsulot, xizmatlar yoki tadbirlar ommalashishida muhim rolga ega va hamyonbop reklama vositasidir. Ulardan har xil turdagi aksiyalar, ko‘rgazmalar va  keng turdagi namoyishlarning taqdimoti uchun foydalaniladi. Bukletlarning  vazifasi takliif qilinayotgan mahsulot yoki xizmatlar to‘g‘risida iste’molchlarga batafsil ma’lumot yetkazishdir.',
     image: bukletImg,
   },
   {
     title: 'Vizitka',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus feugiat pharetra massa risus tortor leo. Non viverra tempus metus risus egestas egestas. Elementum eros, sit sapien ullamcorper ullamcorper et eget at. A netus ultrices lectus vitae.',
+    text: 'Tashrif qog‘ozlari — bular xizmat ko‘rsatuvchi shaxs yoki tadbirkorlar haqida dastlabki ma’lumotlarni yetkazuvchi vositadir. Hamkorlar yoki mijozlar bilan o‘zaro ma’lumot almashinuvida tashrif qog‘ozlari o‘ziga xos ahamiyatga ega.',
     image: vizitkaImg,
   },
   {
     title: 'Paket',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus feugiat pharetra massa risus tortor leo. Non viverra tempus metus risus egestas egestas. Elementum eros, sit sapien ullamcorper ullamcorper et eget at. A netus ultrices lectus vitae.',
+    text: 'Tovar belgisi yoki kompaniya brendi chop etilgan paketlar muhim reklama vositalaridir. Bu orqali siz mijozlar ongida yaxshi taassurot qoldirish va doimiy tarzda ular yodida saqlanish hamda ular iste’mol burchagining bir bo‘lagiga aylanishingiz mumkin.',
     image: paketImg,
   },
   {
     title: 'Kalendar',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus feugiat pharetra massa risus tortor leo. Non viverra tempus metus risus egestas egestas. Elementum eros, sit sapien ullamcorper ullamcorper et eget at. A netus ultrices lectus vitae.',
+    text: 'Kalendar qadimdan ofis, uy va boshqa turar hamda noturar joylarni bezovchi vositalardan  biridir. Ularga o‘z reklamangizni chop etish orqali Siz o‘z biznesingiz va xizmatlaringiz ommalashishida ulkan muvaffaqiyatlarga erishishingiz',
     image: kalendarImg,
   },
   {
     title: 'Fayl',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus feugiat pharetra massa risus tortor leo. Non viverra tempus metus risus egestas egestas. Elementum eros, sit sapien ullamcorper ullamcorper et eget at. A netus ultrices lectus vitae.',
+    text: 'Reklama vositalarining ushbu usuli aniq amaliy qo‘llanmaga ega bo‘lib, undan korxona va tashkilotlarning har bir bo‘limida foydalaniladi. Bunday fayl papkalaridan, odatda, kompaniya va tashkilotlar hamda boshqa turdagi tuzilmalar o‘z brendlari yoki Tovar  belgilarini targ‘ib etishda keng foydalanadilar va ayni damda bu reklamaning eng arzon va  samarali usullaridan biridir.',
     image: faylImg,
   },
   {
     title: 'Liflet',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus feugiat pharetra massa risus tortor leo. Non viverra tempus metus risus egestas egestas. Elementum eros, sit sapien ullamcorper ullamcorper et eget at. A netus ultrices lectus vitae.',
+    text: 'Lifletlar — tovar va xizmatlar reklamasida o‘ziga xos o‘rin tutuvchi reklama vositalaridir. Ulardan kichik kompaniyalar yoki katta korporatsiyalar o‘z mahsulotlari to‘g‘risidagi ma’lumotlarni batafsil yoritishda foydalaniladi. Lifletlar stomatologik klinikalar,  yoqilg‘I quyish shahobchalari, banklar, pulli klinikalar va shu kabi tashkilotlar o‘z  mahsulot va xizmatlarini reklama qilishda muhim reklama vositalaridir.',
     image: lifletImg,
   },
   {
     title: 'Kundalik',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus feugiat pharetra massa risus tortor leo. Non viverra tempus metus risus egestas egestas. Elementum eros, sit sapien ullamcorper ullamcorper et eget at. A netus ultrices lectus vitae.',
+    text: 'Hamkasblaringiz, yaqinlar yoki yaqin hamkorlaringiz uchun unutilmas sovg‘a bo‘lishi mumkin  bo‘lgan suvenirlardan yana biri bu – BLOKNOTDIR. Ularga o‘z tovar belgingiz yoki kompaniyangiz brendini chop etish orqali siz mahsulot va xizmatlaringiz uchun arzon  reklamaga erishishingiz mumkin.',
     image: kundalikImg,
   },
 ];

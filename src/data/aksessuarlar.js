@@ -7,12 +7,12 @@ import ruchkaImg from '../images/aksessuarlar/ruchka.png';
 const aksessuarlar = [
   {
     title: 'Futbolka',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus feugiat pharetra massa risus tortor leo. Non viverra tempus metus risus egestas egestas. Elementum eros, sit sapien ullamcorper ullamcorper et eget at. A netus ultrices lectus vitae.',
+    text: 'Futbolkalar hozirgi jamiyatda har bir kishi kiyim javonining ajralmas bo‘lagidir. Ularga o‘z  Tovar belgingiz yoki korxonangiz brendini chop etish orqali siz muvaffaqiyatli reklamaga erisha olasiz. Futbolka, tadbir va yarmarkalar faoliyatini yoritishda ham ular samarali reklama vositasi bo‘lib xizmat qiladi.',
     image: futbolkaImg,
   },
   {
     title: 'Bayroq',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus feugiat pharetra massa risus tortor leo. Non viverra tempus metus risus egestas egestas. Elementum eros, sit sapien ullamcorper ullamcorper et eget at. A netus ultrices lectus vitae.',
+    text: "Hozirgi kunda bayroqlar ham reklama vositasi sifatida ishlatiladi. Agar ilgari faqat bitta  tashkilot reklama maqsadlarida bayroqlardan foydalangangan bo'lsa, bugungi kunda ulardan  aksariyat joylarda foydalanilayotganligini ko‘rishimiz mumkin. Korxona, tashkilot va turli xil tuzilmalar bayroqlar orqali o‘z brendlari va tovar belgilarini chop  etish orqali samarali yutuqlarga erishmoqdalar.",
     image: bayroqImg,
   },
   {
@@ -23,12 +23,12 @@ const aksessuarlar = [
   },
   {
     title: 'Bakal',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus feugiat pharetra massa risus tortor leo. Non viverra tempus metus risus egestas egestas. Elementum eros, sit sapien ullamcorper ullamcorper et eget at. A netus ultrices lectus vitae.',
+    text: 'Bokallarga Tovar belgisi (logotip) tushirish reklama sohasida keng tarqalgan bo‘lib, bu  nafaqat reklamada, balki hamkasblar yoki yaqinlaringizning unutilmas kunlariga munosib sovg‘a ekanligi bilan ham e’tiborlidir.',
     image: krushkaImg,
   },
   {
     title: 'Ruchka',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus feugiat pharetra massa risus tortor leo. Non viverra tempus metus risus egestas egestas. Elementum eros, sit sapien ullamcorper ullamcorper et eget at. A netus ultrices lectus vitae.',
+    text: 'Ma’lumki, ruchkalarga tovar belgisi, mahsulot yoki xizmat ko‘rsatuvchi korxona nom va  brendlarining chop etilishi yangilik emas. Agar ruchkalar kishilar kundalik ehtiyojlarida  ko‘p foydalaniladigan vosita ekanligini hisobga olsak, demakki ular o‘z-o‘zidan reklama sohasida ham o‘ta samarali vositadirlar.',
     image: ruchkaImg,
   },
 ];
