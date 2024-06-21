@@ -163,7 +163,7 @@
       flex-direction: column;
       background-color: #f1f1f1;
       box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.12), -9px -9px 15px #ffffff;
-      height: 340px;
+      height: 320px;
       width: 300px;
       border-radius: 10px;
       margin: 0 auto;
@@ -173,12 +173,13 @@
       }
       &-title {
         font-family: 'Oswald', sans-serif;
-        font-size: 40px;
+        font-size: 25px;
         text-align: center;
-        line-height: 40px;
+        line-height: 23px;
         span {
           text-align: center;
           letter-spacing: 5px;
+          font-size: 19px;
         }
       }
 
@@ -202,7 +203,6 @@
         font-weight: 600;
         text-transform: uppercase;
         box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.12), -9px -9px 15px #ffffff;
-        margin-top: 10px;
         text-decoration: none;
         color: #000;
       }
@@ -221,7 +221,7 @@
       height: 250px;
 
       &-title {
-        font-size: 35px;
+        font-size: 20px;
       }
 
       &-img {
