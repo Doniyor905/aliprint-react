@@ -8,6 +8,7 @@ import TashqiReklama from './components/TashqiReklama';
 import Maps from './components/Maps';
 import Footer from './components/Footer';
 import ModalForm from './components/ModalForm';
+import { useRef } from 'react';
 function App() {
   return (
     <div className="App">

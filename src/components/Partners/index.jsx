@@ -14,7 +14,7 @@ import classes from './Partners.module.scss';
 import { Pagination, Autoplay } from 'swiper/modules';
 const Partners = () => {
   return (
-    <div>
+    <div id="hamkorlar">
       <Title>Bizning Mijozlar</Title>
       <Container>
         <div className={classes['partners']}>

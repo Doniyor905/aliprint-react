@@ -6,7 +6,7 @@ import Container from '../../layout';
 
 const TashqiReklama = () => {
   return (
-    <div>
+    <div id="tashqireklama">
       <Container>
         <Title>Tashqi Reklama</Title>
         <ProductSlider dataProduct={tashqiReklama} />

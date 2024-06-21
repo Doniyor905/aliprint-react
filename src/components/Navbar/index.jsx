@@ -30,16 +30,16 @@ const Navbar = () => {
               className={classes['nav__close']}
             />
             <li className={classes['nav__link']}>
-              <a href="#!">POLIGRAFIYA</a>
+              <a href="#poligrafiya">POLIGRAFIYA</a>
             </li>
             <li className={classes['nav__link']}>
-              <a href="#!">TASHQI REKLAMA</a>
+              <a href="#tashqireklama">TASHQI REKLAMA</a>
             </li>
             <li className={classes['nav__link']}>
-              <a href="#!">DIZAYN STUDIO </a>
+              <a href="#aksessuarlar">Aksessuarlar</a>
             </li>
             <li className={classes['nav__link']}>
-              <a href="#!">BIZ HAQIMIZDA</a>
+              <a href="#hamkorlar">Hamkorlar</a>
             </li>
           </ul>
         </div>

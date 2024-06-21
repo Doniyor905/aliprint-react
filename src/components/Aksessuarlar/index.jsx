@@ -6,7 +6,7 @@ import aksessuarlar from '../../data/aksessuarlar';
 
 const Aksessuarlar = () => {
   return (
-    <div>
+    <div id="aksessuarlar">
       <Title>Aksessuarlar</Title>
       <Container>
         <ProductSlider className={'aksessuar__slider'} dataProduct={aksessuarlar} />

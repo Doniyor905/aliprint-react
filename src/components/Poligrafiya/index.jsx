@@ -15,7 +15,7 @@ import ProductSlider from '../ProductSlider';
 
 const Poligrafiya = () => {
   return (
-    <div className={classes['poligrafiya']}>
+    <div className={classes['poligrafiya']} id="poligrafiya">
       <Container>
         <Title>POLIGRAFIYA</Title>
         <div className={classes['poligrafiya__inner']}>
