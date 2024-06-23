@@ -15,6 +15,11 @@ import ModalForm from '../ModalForm';
 const ProductSlider = ({ className, dataProduct }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [modal, setModal] = React.useState(false);
+  const [productName, setProductName] = React.useState('');
+  const clickBtn = (data) => {
+    setModal(true);
+    setProductName(data);
+  };
   return (
     <div>
       <Swiper
@@ -58,7 +63,7 @@ const ProductSlider = ({ className, dataProduct }) => {
                 </h3>
                 <p className={classes['productSlider__item-text']}>{data.text}</p>
                 <button
-                  onClick={() => setModal(true)}
+                  onClick={() => clickBtn(data.title)}
                   className={classes['productSlider__item-btn']}>
                   Buyurtma berish
                 </button>
@@ -66,7 +71,7 @@ const ProductSlider = ({ className, dataProduct }) => {
               <div className={classes['productSlider__item-img']}>
                 <img src={data.image} alt="" />
                 <button
-                  onClick={() => setModal(true)}
+                  onClick={() => clickBtn(data.title)}
                   className={classes['productSlider__item-img-btn']}>
                   Buyurtma berish
                 </button>
@@ -75,7 +80,7 @@ const ProductSlider = ({ className, dataProduct }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <ModalForm modal={modal} setModal={setModal} />
+      <ModalForm setProductName={setProductName} nameProduct={productName} modal={modal} setModal={setModal} />
     </div>
   );
 };
