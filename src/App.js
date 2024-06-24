@@ -9,6 +9,7 @@ import Maps from './components/Maps';
 import Footer from './components/Footer';
 import ModalForm from './components/ModalForm';
 import { useRef } from 'react';
+import ModalError from './components/ModalError';
 function App() {
   return (
     <div className="App">
@@ -20,7 +21,6 @@ function App() {
       <Partners />
       <Maps />
       <Footer />
-      {/* <ModalForm /> */}
     </div>
   );
 }

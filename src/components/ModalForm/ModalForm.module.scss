@@ -44,6 +44,12 @@
       display: flex;
       gap: 15px;
       flex-direction: column;
+      label {
+        p {
+          display: flex;
+          gap: 10px;
+        }
+      }
       .input {
         input {
           width: 100%;
@@ -110,6 +116,11 @@
       width: 95%;
       height: 450px;
       &__form {
+        label {
+          p {
+            font-size: 14px;
+          }
+        }
         .input {
           input {
             height: 40px;
