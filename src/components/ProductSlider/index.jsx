@@ -80,7 +80,12 @@ const ProductSlider = ({ className, dataProduct }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <ModalForm setProductName={setProductName} nameProduct={productName} modal={modal} setModal={setModal} />
+      <ModalForm
+        setProductName={setProductName}
+        nameProduct={productName}
+        modal={modal}
+        setModal={setModal}
+      />
     </div>
   );
 };

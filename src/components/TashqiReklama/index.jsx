@@ -1,15 +1,14 @@
 import React from 'react';
 import Title from '../Title';
 import ProductSlider from '../ProductSlider';
-import tashqiReklama from '../../data/tashqiRekalama';
 import Container from '../../layout';
 
-const TashqiReklama = () => {
+const TashqiReklama = ({ tashqiRekalama }) => {
   return (
     <div id="tashqireklama">
       <Container>
         <Title>Tashqi Reklama</Title>
-        <ProductSlider dataProduct={tashqiReklama} />
+        <ProductSlider dataProduct={tashqiRekalama} />
       </Container>
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../../App.css';
-import poligrafiya from '../../data/poligrafiya';
+
 import classes from './Poligrafiya.module.scss';
 
 // Import Swiper styles
@@ -13,7 +13,7 @@ import Container from '../../layout';
 import Title from '../Title';
 import ProductSlider from '../ProductSlider';
 
-const Poligrafiya = () => {
+const Poligrafiya = ({ poligrafiya }) => {
   return (
     <div className={classes['poligrafiya']} id="poligrafiya">
       <Container>

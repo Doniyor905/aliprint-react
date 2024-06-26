@@ -7,17 +7,23 @@ import Poligrafiya from './components/Poligrafiya';
 import TashqiReklama from './components/TashqiReklama';
 import Maps from './components/Maps';
 import Footer from './components/Footer';
-import ModalForm from './components/ModalForm';
-import { useRef } from 'react';
-import ModalError from './components/ModalError';
+
+import poligrafiya from './data/poligrafiya';
+import aksessuarlar from './data/aksessuarlar';
+import tashqiRekalama from './data/tashqiRekalama';
+
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar
+        poligrafiya={poligrafiya}
+        tashqiRekalama={tashqiRekalama}
+        aksessuarlar={aksessuarlar}
+      />
       <Header />
-      <Poligrafiya />
-      <TashqiReklama />
-      <Aksessuarlar />
+      <Poligrafiya poligrafiya={poligrafiya} />
+      <TashqiReklama tashqiRekalama={tashqiRekalama} />
+      <Aksessuarlar aksessuarlar={aksessuarlar} />
       <Partners />
       <Maps />
       <Footer />

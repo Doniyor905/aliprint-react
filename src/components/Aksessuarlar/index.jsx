@@ -2,9 +2,8 @@ import React from 'react';
 import Title from '../Title';
 import Container from '../../layout';
 import ProductSlider from '../ProductSlider';
-import aksessuarlar from '../../data/aksessuarlar';
 
-const Aksessuarlar = () => {
+const Aksessuarlar = ({ aksessuarlar }) => {
   return (
     <div id="aksessuarlar">
       <Title>Aksessuarlar</Title>

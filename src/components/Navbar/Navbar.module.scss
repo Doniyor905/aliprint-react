@@ -46,6 +46,30 @@
     gap: 10px;
     font-size: 25px;
   }
+
+  &__dropdown {
+    width: 200px;
+    background-color: #fff;
+    position: absolute;
+    list-style: none;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: ease-in-out 0.5s;
+    &.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    li {
+      margin-bottom: 5px;
+
+      &:hover {
+        color: #ce1212;
+      }
+    }
+  }
 }
 
 @media (max-width: 749px) {
