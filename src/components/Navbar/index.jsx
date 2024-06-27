@@ -7,16 +7,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTelegram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faBars, faClose, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 const Navbar = ({ poligrafiya, tashqiRekalama, aksessuarlar }) => {
   const [navMenu, setNavMenu] = React.useState(false);
-  const [isVisibleMenu, setIsVisibleMenu] = React.useState(false);
+  const [tashqiMenu, setTashqiMenu] = React.useState(false);
+  const [poligrafiyaMenu, setPoligrafiyaMenu] = React.useState(false);
+  const [aksessuarMenu, setAksessuarMenu] = React.useState(false);
 
   return (
     <Container>
       <nav className={classes['nav']}>
         <img className={classes['nav__logo']} src={logo} alt="" />
         <div
-          // onClick={() => setNavMenu(false)}
           className={
             navMenu
               ? classNames(classes['nav__list-wrapper'], classes['active'])
@@ -33,33 +35,80 @@ const Navbar = ({ poligrafiya, tashqiRekalama, aksessuarlar }) => {
             />
             <li className={classes['nav__link']}>
               <a
+                className={classes['nav__link-a']}
                 href="#!"
-                onMouseEnter={() => setIsVisibleMenu(true)}
-                onMouseLeave={() => setIsVisibleMenu(false)}>
+                onMouseEnter={() => setPoligrafiyaMenu(true)}
+                onMouseLeave={() => setPoligrafiyaMenu(false)}>
                 <span>
-                  POLIGRAFIYA{' '}
+                  POLIGRAFIYA
                   <FontAwesomeIcon className={classes['nav__link-icon']} icon={faChevronDown} />
                 </span>
                 <ul
                   className={
-                    isVisibleMenu
+                    poligrafiyaMenu
                       ? classNames(classes['nav__dropdown'], classes['active'])
                       : classes['nav__dropdown']
                   }>
                   {poligrafiya.map((link) => (
-                    <li className={classes['nav__dropdown-link']}>{link.title}</li>
+                    <Link className={classes['nav__dropdown-link']} key={link.url} to={link.url}>
+                      <li>{link.title}</li>
+                    </Link>
                   ))}
                 </ul>
               </a>
             </li>
             <li className={classes['nav__link']}>
-              <a href="#tashqireklama">TASHQI REKLAMA</a>
+              <a
+                className={classes['nav__link-a']}
+                href="#!"
+                onMouseEnter={() => setTashqiMenu(true)}
+                onMouseLeave={() => setTashqiMenu(false)}>
+                <span>
+                  TASHQI REKLAMA
+                  <FontAwesomeIcon className={classes['nav__link-icon']} icon={faChevronDown} />
+                </span>
+                <ul
+                  className={
+                    tashqiMenu
+                      ? classNames(classes['nav__dropdown'], classes['active'])
+                      : classes['nav__dropdown']
+                  }>
+                  {tashqiRekalama.map((link) => (
+                    <Link className={classes['nav__dropdown-link']} key={link.url} to={link.url}>
+                      <li>{link.title}</li>
+                    </Link>
+                  ))}
+                </ul>
+              </a>
             </li>
             <li className={classes['nav__link']}>
-              <a href="#aksessuarlar">Aksessuarlar</a>
+              <a
+                className={classes['nav__link-a']}
+                href="#!"
+                onMouseEnter={() => setAksessuarMenu(true)}
+                onMouseLeave={() => setAksessuarMenu(false)}>
+                <span>
+                  Aksessuarlar
+                  <FontAwesomeIcon className={classes['nav__link-icon']} icon={faChevronDown} />
+                </span>
+                <ul
+                  className={
+                    aksessuarMenu
+                      ? classNames(classes['nav__dropdown'], classes['active'])
+                      : classes['nav__dropdown']
+                  }>
+                  {aksessuarlar.map((link) => (
+                    <Link className={classes['nav__dropdown-link']} key={link.url} to={link.url}>
+                      <li>{link.title}</li>
+                    </Link>
+                  ))}
+                </ul>
+              </a>
             </li>
             <li className={classes['nav__link']}>
-              <a href="#hamkorlar">Hamkorlar</a>
+              <a className={classes['nav__link-a']} href="#hamkorlar">
+                Hamkorlar
+              </a>
             </li>
           </ul>
         </div>

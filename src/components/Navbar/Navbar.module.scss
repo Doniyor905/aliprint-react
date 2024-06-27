@@ -19,11 +19,16 @@
   }
 
   &__link {
-    a {
+    &-a {
       text-decoration: none;
       color: #000;
       text-transform: uppercase;
-
+      font-size: 15px;
+      span {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
       &:hover::after {
         transform: scale(1);
       }
@@ -58,9 +63,15 @@
     opacity: 0;
     pointer-events: none;
     transition: ease-in-out 0.5s;
+    box-shadow: -4px 9px 26px -3px rgba(0, 0, 0, 0.23);
     &.active {
       opacity: 1;
       pointer-events: auto;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: #000;
     }
     li {
       margin-bottom: 5px;
@@ -79,7 +90,7 @@
     }
     &__link {
       a {
-        font-size: 14px;
+        font-size: 12px;
       }
     }
 
@@ -92,8 +103,21 @@
 
 @media (max-width: 629px) {
   .nav {
+    &__link-a span {
+      font-size: 14px;
+    }
+    &__link {
+      a {
+        font-size: 14px;
+      }
+    }
     &__close {
       display: block;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+    &__dropdown {
+      right: 15px;
     }
     &__list {
       position: fixed;

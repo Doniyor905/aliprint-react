@@ -8,11 +8,7 @@ import TashqiReklama from './components/TashqiReklama';
 import Maps from './components/Maps';
 import Footer from './components/Footer';
 
-import poligrafiya from './data/poligrafiya';
-import aksessuarlar from './data/aksessuarlar';
-import tashqiRekalama from './data/tashqiRekalama';
-
-function App() {
+function App({ poligrafiya, tashqiRekalama, aksessuarlar }) {
   return (
     <div className="App">
       <Navbar

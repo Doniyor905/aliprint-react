@@ -22,7 +22,7 @@ const aksessuarlar = [
     subtitle: 'Kiyim',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus feugiat pharetra massa risus tortor leo. Non viverra tempus metus risus egestas egestas. Elementum eros, sit sapien ullamcorper ullamcorper et eget at. A netus ultrices lectus vitae.',
     image: kepkaImg,
-    url: '/product/boshkiyim',
+    url: '/product/bosh',
   },
   {
     title: 'Bakal',

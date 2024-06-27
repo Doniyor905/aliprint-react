@@ -2,30 +2,32 @@ import React from 'react';
 import Container from '../../layout/index';
 import classes from './Productpage.module.scss';
 
-import img from '../../images/poligrafiya/flayer.png';
+import { useParams } from 'react-router-dom';
+import ModalForm from '../../components/ModalForm';
+const ProductPage = ({ data }) => {
+  const [modal, setModal] = React.useState(false);
+  const { type } = useParams();
+  console.log(data[type]);
 
-const ProductPage = () => {
   return (
     <div className={classes['productPage']}>
       <Container>
         <div className={classes['productPage__inner']}>
           <div className={classes['productPage__item']}>
-            <h2>Flayer</h2>
-            <p>
-              Reklama flayerlari mahsulot yoki xizmatlaringiz ommalashishida qat’iy tarzda mijozlar
-              e’tiborini jalb etish va buning uchun ko‘p xarajat talab etilmasligi bilan
-              ahamiyatlidir. Flayerlar e’lon qilinayotgan mahsulot yoki xizmatlar to‘g‘risida
-              batafsil ma’lumot berishi bilan ham o‘ziga xos xarakterga ega. Bu esa biznesingiz
-              rivojida mijozlar ko‘lamini kengaytirish, mahsulot yoki xizmatlar savdo ko‘lamini
-              oshirish hamda yuqori daromad olishda muhim ahamiyat kasb etadi.
-            </p>
-            <button className={classes['productPage__btn']}>Buyurtma berish</button>
+            <h2>
+              {data[type].title} <span>{data[type].subtitle}</span>
+            </h2>
+            <p>{data[type].text}</p>
+            <button onClick={() => setModal(true)} className={classes['productPage__btn']}>
+              Buyurtma berish
+            </button>
           </div>
           <div className={classes['productPage__img']}>
-            <img src={img} alt="" />
+            <img src={data[type].image} alt="" />
           </div>
         </div>
       </Container>
+      <ModalForm nameProduct={data[type].title} modal={modal} setModal={setModal}></ModalForm>
     </div>
   );
 };

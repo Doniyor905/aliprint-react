@@ -33,7 +33,7 @@ const tashqiReklama = [
     subtitle: 'Harflar',
     text: 'Tashqi reklamaning keng tarqalgan turlaridan biri bu – BO‘RTMA HARFLARDIR. Ofis, korxona,  tashkilot yoki savdo do‘konlari peshlavhalarini bo‘rtma harflar orqali aks ettirish keng  jamoatchilik va hamkorlar e’tiborini jalb qilishda samarali reklama vositasidir.',
     image: bortmaHarfImg,
-    url: '/product/bortmaharf',
+    url: '/product/bortma',
   },
   {
     title: 'Korob',
