@@ -63,7 +63,7 @@ const ProductSlider = ({ className, dataProduct }) => {
                 </h3>
                 <p className={classes['productSlider__item-text']}>{data.text}</p>
                 <button
-                  onClick={() => clickBtn(data.title)}
+                  onClick={() => clickBtn(data.title + ' ' + data.subtitle)}
                   className={classes['productSlider__item-btn']}>
                   Buyurtma berish
                 </button>
@@ -71,7 +71,7 @@ const ProductSlider = ({ className, dataProduct }) => {
               <div className={classes['productSlider__item-img']}>
                 <img src={data.image} alt="" />
                 <button
-                  onClick={() => clickBtn(data.title)}
+                  onClick={() => clickBtn(data.title + ' ' + data.subtitle)}
                   className={classes['productSlider__item-img-btn']}>
                   Buyurtma berish
                 </button>

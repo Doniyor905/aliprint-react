@@ -7,7 +7,7 @@ import ModalForm from '../../components/ModalForm';
 const ProductPage = ({ data }) => {
   const [modal, setModal] = React.useState(false);
   const { type } = useParams();
-  console.log(data[type]);
+  console.log(data[type].title + ' ' + data[type].subtitle);
 
   return (
     <div className={classes['productPage']}>
@@ -27,7 +27,10 @@ const ProductPage = ({ data }) => {
           </div>
         </div>
       </Container>
-      <ModalForm nameProduct={data[type].title} modal={modal} setModal={setModal}></ModalForm>
+      <ModalForm
+        nameProduct={data[type].title + ' ' + data[type].subtitle}
+        modal={modal}
+        setModal={setModal}></ModalForm>
     </div>
   );
 };
