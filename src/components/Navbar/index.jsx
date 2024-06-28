@@ -51,7 +51,9 @@ const Navbar = ({ poligrafiya, tashqiRekalama, aksessuarlar }) => {
                   }>
                   {poligrafiya.map((link) => (
                     <Link className={classes['nav__dropdown-link']} key={link.url} to={link.url}>
-                      <li>{link.title}</li>
+                      <li>
+                        {link.title} <span>{link.subtitle}</span>
+                      </li>
                     </Link>
                   ))}
                 </ul>
@@ -75,7 +77,9 @@ const Navbar = ({ poligrafiya, tashqiRekalama, aksessuarlar }) => {
                   }>
                   {tashqiRekalama.map((link) => (
                     <Link className={classes['nav__dropdown-link']} key={link.url} to={link.url}>
-                      <li>{link.title}</li>
+                      <li>
+                        {link.title} <span>{link.subtitle}</span>
+                      </li>
                     </Link>
                   ))}
                 </ul>
@@ -99,7 +103,9 @@ const Navbar = ({ poligrafiya, tashqiRekalama, aksessuarlar }) => {
                   }>
                   {aksessuarlar.map((link) => (
                     <Link className={classes['nav__dropdown-link']} key={link.url} to={link.url}>
-                      <li>{link.title}</li>
+                      <li>
+                        {link.title} <span>{link.subtitle}</span>
+                      </li>
                     </Link>
                   ))}
                 </ul>

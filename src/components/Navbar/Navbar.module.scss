@@ -72,6 +72,10 @@
     &-link {
       text-decoration: none;
       color: #000;
+      li {
+        display: flex;
+        gap: 5px;
+      }
     }
     li {
       margin-bottom: 5px;

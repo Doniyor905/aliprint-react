@@ -16,10 +16,11 @@ const ProductSlider = ({ className, dataProduct }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [modal, setModal] = React.useState(false);
   const [productName, setProductName] = React.useState('');
-  const clickBtn = (data) => {
+  const clickBtn = (data, subData) => {
     setModal(true);
-    setProductName(data);
+    setProductName(data, subData);
   };
+
   return (
     <div>
       <Swiper
@@ -71,7 +72,7 @@ const ProductSlider = ({ className, dataProduct }) => {
               <div className={classes['productSlider__item-img']}>
                 <img src={data.image} alt="" />
                 <button
-                  onClick={() => clickBtn(data.title + ' ' + data.subtitle)}
+                  onClick={() => clickBtn(data.title)}
                   className={classes['productSlider__item-img-btn']}>
                   Buyurtma berish
                 </button>
